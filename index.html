@@ -33,11 +33,18 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: popIn 1s ease;
+            display: inline-block;
         }
 
         @keyframes popIn {
             0% { transform: scale(0.5); opacity: 0; }
             100% { transform: scale(1); opacity: 1; }
+        }
+
+        .crown {
+            color: #ffdc00; /* Natural crown gold color */
+            font-size: 4rem;
+            vertical-align: middle;
         }
 
         img {
@@ -90,7 +97,9 @@
 </head>
 
 <body>
-    <h1 class="floating-effect">👑 Welcome, Thailees! 👑</h1>
+    <h1 class="floating-effect">
+        <span class="crown">👑</span> Welcome, Legends! <span class="crown">👑</span>
+    </h1>
 
     <!-- First Image -->
     <img src="prank.jpg" alt="First prank image" class="floating-effect" />
