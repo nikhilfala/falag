@@ -36,6 +36,10 @@
             transition: transform 0.3s ease-in-out;
         }
 
+        .half-hidden {
+            clip-path: polygon(0 0, 50% 0, 100% 50%, 100% 100%, 50% 100%, 0 50%);
+        }
+
         img:hover {
             transform: scale(1.1) rotate(5deg);
         }
@@ -61,9 +65,9 @@
 </head>
 <body>
 
-    <h1>Welcome Thailees!</h1>
+    <h1>Welcome, Thailees!</h1>
 
-    <img src="prank.jpg" alt="First prank image">
+    <img src="prank.jpg" alt="First prank image" class="half-hidden">
     <img src="prank2.jpg" alt="Second prank image">
     <img src="prank3.jpg" alt="Third prank image">
 
