@@ -12,47 +12,61 @@
             text-align: center;
             padding: 20px;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
+
         h1 {
             font-size: 3rem;
             color: #2d89ef;
             margin-bottom: 40px;
             font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s infinite;
         }
+
         img {
-            max-width: 60%;
+            max-width: 80%;
             height: auto;
-            margin: 20px 0;
-            border: none;
+            border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, opacity 0.3s ease;
+            transition: transform 0.3s ease-in-out;
         }
+
         img:hover {
-            transform: translateY(-10px);
-            opacity: 0.9;
-            cursor: pointer;
+            transform: scale(1.1) rotate(5deg);
         }
+
         .footer {
             margin-top: 30px;
             font-size: 1rem;
             color: #666;
         }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
     </style>
 </head>
 <body>
 
-    <h1>Welcome, Legends!</h1>
+    <h1>Welcome Thailees!</h1>
 
-    <!-- First Image -->
-    <img src="prank.jpg" alt="First prank image" />
+    <img src="prank.jpg" alt="First prank image">
+    <img src="prank2.jpg" alt="Second prank image">
+    <img src="prank3.jpg" alt="Third prank image">
 
-    <!-- Second Image -->
-    <img src="prank2.jpg" alt="Second prank image" />
-
-    <!-- Third Image -->
-    <img src="prank3.jpg" alt="Third prank image" />
-
-    <!-- Footer Message -->
     <div class="footer">
         <p>Psst... Don't tell anyone! 😉</p>
     </div>
