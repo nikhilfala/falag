@@ -3,23 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Prank Page</title>
+    <title>Potta Porikki</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffeb3b; /* Fun, vibrant background color */
+            color: #222;
             text-align: center;
             padding: 20px;
         }
         h1 {
-            color: #333;
+            color: #d32f2f; /* Playful red color */
+            text-shadow: 2px 2px #000;
+            font-size: 3rem;
+            margin-bottom: 30px;
         }
         img {
-            max-width: 80%; /* Responsive width */
-            height: auto;   /* Maintain aspect ratio */
-            margin: 20px 0; /* Space between images */
-            border: 2px solid #ccc; /* Optional: add a border */
-            border-radius: 8px; /* Optional: round corners */
+            max-width: 70%; /* Make the images slightly smaller */
+            height: auto;
+            margin: 15px 0; /* Space between images */
+            border: 3px dashed #4caf50; /* Dashed border for a funky look */
+            border-radius: 12px;
+            transition: transform 0.3s ease, filter 0.3s ease; /* Smooth animations */
+        }
+        img:hover {
+            transform: scale(1.1); /* Slight zoom on hover */
+            filter: brightness(1.2); /* Brighten image on hover */
+            cursor: pointer;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            color: #333;
         }
     </style>
 </head>
@@ -28,10 +43,18 @@
     <h1>WELCOME PRANDS!</h1>
 
     <!-- First Image -->
-    <img src="prank.jpg" alt="Description of the first image" />
-    
+    <img src="prank.jpg" alt="First Prank Image" />
+
     <!-- Second Image -->
-    <img src="prank2.jpg" alt="Description of the new image" />
+    <img src="prank2.jpg" alt="Second Prank Image" />
+
+    <!-- Third Image -->
+    <img src="prank3.jpg" alt="Third Prank Image" />
+
+    <!-- Footer Message -->
+    <div class="footer">
+        <p>Click the images... if you dare! 😂</p>
+    </div>
 
 </body>
 </html>
